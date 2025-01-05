@@ -1,8 +1,8 @@
 #click
 set coords {click.coords}
 setsplit coords " "
-if click.button|=|"Left" jump #mine {coords[0]}|{coords[1]}|{coords[2]}
-if click.button|=|"Right" jump #place {coords[0]}|{coords[1]}|{coords[2]}
+if click.button|=|"Left" jump #mine|{coords[0]}|{coords[1]}|{coords[2]}
+if click.button|=|"Right" jump #place|{coords[0]}|{coords[1]}|{coords[2]}
 quit
 
 #mine
@@ -26,6 +26,10 @@ tempblock 1 {x} {y} {z}
 quit
 
 #onJoin
-msg Starting setup
+msg Starting setup v2
 clickevent sync register #click
+quit
+
+#reload
+cmd osus https://bravelycowering.net/na2-survival/survival.nas
 quit
