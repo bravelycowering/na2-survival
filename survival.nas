@@ -33,3 +33,11 @@ quit
 #reload
 cmd osus https://bravelycowering.net/na2-survival/survival.nas
 quit
+
+#hideallblocks
+set i 0
+#1
+setadd i 1
+cmd os lb edit {i} order 0
+delay 500
+if i|<|767 jump #i
