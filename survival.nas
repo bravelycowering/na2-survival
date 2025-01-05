@@ -1,0 +1,2 @@
+#onJoin
+msg Starting setup
