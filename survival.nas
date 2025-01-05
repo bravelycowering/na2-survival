@@ -16,17 +16,17 @@ quit
 set x {runArg1}
 set y {runArg2}
 set z {runArg3}
-if click.face|=|"AwayX" setsub x 1
-if click.face|=|"AwayY" setsub y 1
-if click.face|=|"AwayZ" setsub z 1
-if click.face|=|"TowardsX" setadd x 1
-if click.face|=|"TowardsY" setadd y 1
-if click.face|=|"TowardsZ" setadd z 1
+if click.face|=|"AwayX" setadd x 1
+if click.face|=|"AwayY" setadd y 1
+if click.face|=|"AwayZ" setadd z 1
+if click.face|=|"TowardsX" setsub x 1
+if click.face|=|"TowardsY" setsub y 1
+if click.face|=|"TowardsZ" setsub z 1
 tempblock 1 {x} {y} {z}
 quit
 
 #onJoin
-msg Starting setup v2
+msg Starting setup v3
 clickevent sync register #click
 quit
 
